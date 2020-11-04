@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multi  Quiz</title>
+</head>
+<body>
+
+<!--Тег "Form" для квиза отправки сообщения, можно заменить на любой другой
+если это не отправка сообщения.
+Если менять расположение блоков, не забыть поставить ID на общий блок
+родителя
+-->
+
+<!--Вариант 1 - Форма Обратной Связи-->
+  <form action="mail.php" class="quiz-wrap ajax-contact-form"
+        method="post"
+        id="form">
+    <div class="head">
+      <div class="head__content quiz__head">Тут будет какой то
+        вопрос</div>
+      <div class="quiz__footer">
+        <div class="footer__content quiz__pages">0 / 0</div>
+      </div>
+    </div>
+    <div class="quiz__body">
+      <div class="buttons">
+        <div class="buttons__content quiz__buttons">
+          <button class="button">Default button</button>
+          <button class="button button_wrong">Wrong answer</button>
+          <button class="button button_correct">Correct answer</button>
+          <button class="button button_passive">Unclicked button</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+<!--Вариант 2 - ТЕСТ-->
+<section class="quiz wrapper" id="form2">
+  <h3>Пройдите опрос</h3>
+  <div class="quiz-wrap">
+    <div class="head">
+      <div class="head__content quiz__head">Тут будет какой то
+        вопрос</div>
+    </div>
+    <div class="quiz__body">
+      <div class="buttons">
+        <div class="buttons__content quiz__buttons">
+          <button class="button">Default button</button>
+          <button class="button button_wrong">Wrong answer</button>
+          <button class="button button_correct">Correct answer</button>
+          <button class="button button_passive">Unclicked button</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="quiz__footer">
+    <div class="footer__content quiz__pages">0 / 0</div>
+  </div>
+</section>
+
+</body>
+</html>
